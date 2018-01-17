@@ -12,38 +12,67 @@ body {
   background-repeat: no-repeat;
 }
 
-.form-control {
-  text-align: center;
-}
-
 .input-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
+}
+
+.landing-page {
+  width: 50%;
+  height: 100%;
+  margin: 12.5% auto;
+}
+
+.innerRow {
+  margin: 2% 0;
+}
+
+.form-control {
+  text-align: center;
 }
 
 .submit-button {
   width: 100%;
 }
 
-/* .landing-page {
-  width: 50%;
-} */
-
-.row {
-  margin: 2% auto;
-}
-
 .show-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   height: 100%;
 }
 
+.show-list {
+  display: flex;
+  height: 15%;
+  width: 30%;
+  margin: auto;
+}
+
+.show-list .artist-info {
+  width: 25%;
+  margin: auto;
+}
+
+.show-list .show-info {
+  width: 75%;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  height: 100%
+}
+
 #map {
+  /* height: 100%; */
   width: 100%;
 }
 
-.media {
-  margin-top: 0;
+/* Portrait */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .show-list {
+    width: 95%;
+    height: auto;
+  }
 }
